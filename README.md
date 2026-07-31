@@ -60,14 +60,9 @@ print(f"店名: {store_name}")
 
 # アカウントに登録されているカード一覧を取得
 cards = mcd.get_cards()
-print(f"登録カード: {cards}")
 
-
-# ------------------------------------------------------------------ #
-# HEX (QRコード情報) からワンショットで決済を完了させる
-# ------------------------------------------------------------------ #
-
-hex_str = "ここにQRコードからデコードしたHEX文字列"
+# hexから注文
+hex_str = "ここは状況に応じて変更"
 
 # HEXの解析だけ先にやりたい場合
 decoded = decode_hex(hex_str)
@@ -75,14 +70,8 @@ print(f"店舗ID: {decoded.store_id}")
 print(f"受け取り方法: {decoded.pickup_method}") # テイクアウト / イートイン / デリバリー
 print(f"合計金額: {decoded.amount_cents}円")
 
-# 決済実行 (StoreOrder -> AuthoriseOrder -> GetPaidOrder を自動走破)
+# 決済実行 (StoreOrder -> AuthoriseOrder -> GetPaidOrder)
 result = mcd.pay_from_hex(hex_str)
-
-print(f"注文完了！")
-print(f"受け取り番号: {result.receipt_number}")
-print(f"店舗名: {result.store_name}")
-print(f"受け取り形態: {result.pickup_method}")
-print(f"ステータス: {result.status}")
 
 ```
 
