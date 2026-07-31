@@ -30,7 +30,7 @@ pip install requests
 #### `example.py`
 
 ```python
-from main import MCD, TokenSet, decode_hex
+from HATTIMCD.main import MCD, TokenSet, decode_hex
 
 # 1. トークンが既にある場合の設定
 tokens = TokenSet(
