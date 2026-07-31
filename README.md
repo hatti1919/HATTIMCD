@@ -7,12 +7,8 @@ Python用のマクドナルド モバイルオーダー APIラッパー
 
 
 ## 📦 インストール
-現在 `pip` 配布はしていません。リポジトリをクローンするか、`main.py` を直接プロジェクトに置いて利用してください。
+リポジトリをクローンしてください。pipは随時公開予定です。
 
-```bash
-git clone [https://github.com/あなたのユーザー名/MCD-mobile-py.git](https://github.com/あなたのユーザー名/MCD-mobile-py.git)
-
-```
 
 ### 必須ライブラリ
 
