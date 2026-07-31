@@ -12,9 +12,7 @@ Python用のマクドナルド モバイルオーダー APIラッパー
 
 ### 必須ライブラリ
 
-```bash
 pip install requests
-```bash
 
 ---
 
