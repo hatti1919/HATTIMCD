@@ -1,5 +1,5 @@
 ```markdown
-# MCD-mobile-py 🍔
+# HATTIMCD
 Python用のマクドナルド モバイルオーダー APIラッパー  
 (非公式ライブラリ / 直近の仕様変更やトークン周りに合わせて組み直し済み)
 
