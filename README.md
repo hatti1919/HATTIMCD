@@ -48,13 +48,11 @@ mcd = MCD(tokens=tokens)
 
 # 2. ログインから行う場合
 # mfa_token = mcd.login("example@email.com", "Password123")
-# tokens = mcd.login_with_mfa(mfa_token, "123456") # SMS等のOTPを入力
+# tokens = mcd.login_with_mfa(mfa_token, "123456") # SMS等のOTPを
 
-# ------------------------------------------------------------------ #
-# 店舗情報・登録カードの取得
-# ------------------------------------------------------------------ #
+# 店舗情報などの取得
 
-# 店舗名を取得 (group-h 〜 group-e を自動でフォールバック探索)
+# 店舗名を取得 
 store_name = mcd.get_store_name("01001")
 print(f"店名: {store_name}")
 
@@ -83,7 +81,7 @@ result = mcd.pay_from_hex(hex_str)
 
 店舗によって `group-e`, `group-f`, `group-g`, `group-h` のどれに属しているかが異なります。
 
-`store_order` では `group-e` から `group-h` まで順番にトライして、適合するエンドポイントを自動判別します。
+`store_order` では `group-e` から `group-h` まで順番にトライして、適合するエンドポイントを総当たりで判別します。
 
 ### クレジットカードの追加 (Veritrans + 3DS)
 
