@@ -14,8 +14,7 @@ Python用のマクドナルド モバイルオーダー APIラッパー
 
 ```bash
 pip install requests
-
-```
+```bash
 
 ---
 
